@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <title>app</title>
+    <style>
+            body {
+                padding-top: 5rem;
+              }
+            
+    </style>
+</head>
+<body>
+    <!-- includes partials -->
+    {% include 'includes/_navbar.html' %}
+    <main role="main" class="container">
+        {% block body %}{% endblock %}
+    </main>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+</body>
+</html>
